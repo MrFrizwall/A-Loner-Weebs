@@ -1,0 +1,153 @@
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  body{
+    background: #000000;
+    background-image: url(main.jpg);
+    background-position: center top;
+    background-attachment:fixed;
+    cursor: url('hand.cur'), auto;
+    margin: 0 auto;
+    
+    
+  }
+
+  .wrapper > * {
+    padding: 5px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    font-size: 50px;
+    font-family: "MS PGothic";
+    line-height: 1.6;
+    color: #ffffff;
+    border-width: 5px;
+    background-image: url(foto01.jpg);
+    
+    
+  }
+  
+  .teks_besar {
+    font-size: 50px;
+    font-family: "MS PGothic";
+    line-height: 1.6;
+    color: #ffffff;
+    border-width: 5px;
+  }
+
+  .logo {
+    height: 100vh;
+    overflow:hidden;
+    overflow-y: scroll;
+    opacity: .9;
+    background-color: #000;
+    box-sizing: border-box; 
+    background-attachment:fixed;
+    background-image: url(foto02.png);
+  }
+
+
+  nav {
+    height: 100vh;
+    overflow:hidden;
+    overflow-y: scroll;
+    opacity: .9;
+    background-color: #000;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    font-size: 30px;
+    font-family: "Helvetica Neue";
+    color: #ffffff;
+    background-image: url(foto01.jpg);
+    
+  }
+  
+  .main {
+    text-align: center;
+    background-image: url(foto02.png);
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  
+  .aside-1 {   
+    background-image: url(foto02.png);
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  
+  .text-1 {   
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+  }
+
+  .text-2 {   
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .text-3 {   
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: right;
+  }
+
+  .gambar-1 {   
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+    justify-items: center;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+
+  .aside-2 {
+    background: #ffffff;
+    background-image: url(foto02.png);
+    border: 0px solid rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside {
+      flex: 1 auto;
+    }
+  }
+  @media all and (min-width: 800px) {
+    .main {
+      flex: 3 0px;
+    }
+  
+    .aside-1 {
+      order: 1;
+    }
+  
+    .main {
+      order: 2;
+    }
+  
+    .aside-2 {
+      order: 3;
+    }
+  
+    .footer {
+      order: 4;
+    }
+  }
+  body {
+    padding: 2em;
+  }
+
